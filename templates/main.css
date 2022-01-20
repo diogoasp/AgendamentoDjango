@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+    font-family: 'Nunito', sans-serif;
+}
+header{
+    background-color: #1F1C1A;
+    padding: 2%;
+}
+
+#logo{
+    width: 15%;
+    min-width: 120px;
+}
+
+.flex{
+    display: flex;
+}
+
+.horizontal{
+    flex-direction: row;
+}
+
+nav{
+    align-self: center;
+}
+
+.menu{
+    margin: auto auto;
+}
+
+.menu li{
+    display: block;
+    /* background-color: blueviolet; */
+    margin: 0 10px;
+}
+
+.menu li a{
+    padding: 16px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover{
+    background-color: #AB2626;
+    /* padding: 24px; */
+    /* font-size: xx-large; */
+}
+.pokedex{
+    /* border: 1px black solid; */
+    text-align: center;
+    margin: 2% auto;
+    
+    /* CENTRALIZE A TABELA NA TELA */
+}
+.pokedex td, th{
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+.pokedex img{
+    width: 20%;
+}
+footer{
+    width: 100%;
+    margin-top: 1%;
+}
+.itens-footer{
+    background-color: #1F1C1A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+    padding: 1% 1% 0% 1%;
+    min-height: 60px;
+    color: white;
+    align-self: center;
+}
+.itens-footer img{
+    width: 10%;
+}
+aside{
+    border-right: 2px black double;
+    flex-basis:12%;
+    min-width: 200px;
+    margin-top: 15px;
+    margin-right: 1%;
+    margin-left: 0.25%;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+aside h2{
+    text-align: center;
+}
+aside ul{
+    padding: 10px;
+    list-style: none;
+}
+
+aside li{
+    margin: 10px;
+}
+
+aside ul li a{
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+aside img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+form{
+    padding: 10px;
+}
+
+form label{
+    margin-right: 10px;
+}
+
+form div{
+    padding: 5px;
+    margin: 5px auto;
+}
+h2{
+    margin: 0;
+}
+form input, select{
+    border-radius: 30px;
+    padding: 5px;
+}
+form input[type=submit]{
+    background-color: springgreen;
+    color: white;
+    padding: 15px;
+    font-size: medium;
+    font-weight: 800;
+}
+
+form input[type=submit]:hover{
+    background-color: chartreuse;
+}
+.h2Table{
+    margin-top: 3%;
+}

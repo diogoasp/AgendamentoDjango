@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pokemon</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="template/main.css">
+    <script src='main.js'></script>
+    <link rel="icon" href="https://icon-library.com/images/pokemon-ball-icon/pokemon-ball-icon-28.jpg">
+    <link rel="starter-template.css" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+    font-family: 'Nunito', sans-serif;
+}
+header{
+    background-color: #1F1C1A;
+    padding: 2%;
+}
+
+#logo{
+    width: 15%;
+    min-width: 120px;
+}
+
+.flex{
+    display: flex;
+}
+
+.horizontal{
+    flex-direction: row;
+}
+
+nav{
+    align-self: center;
+}
+
+.menu{
+    margin: auto auto;
+}
+
+.menu li{
+    display: block;
+    /* background-color: blueviolet; */
+    margin: 0 10px;
+}
+
+.menu li a{
+    padding: 16px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover{
+    background-color: #AB2626;
+    /* padding: 24px; */
+    /* font-size: xx-large; */
+}
+.pokedex{
+    /* border: 1px black solid; */
+    text-align: center;
+    margin: 2% auto;
+    
+    /* CENTRALIZE A TABELA NA TELA */
+}
+.pokedex td, th{
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+.pokedex img{
+    width: 20%;
+}
+footer{
+    width: 100%;
+    margin-top: 1%;
+}
+.itens-footer{
+    background-color: #1F1C1A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+    padding: 1% 1% 0% 1%;
+    min-height: 60px;
+    color: white;
+    align-self: center;
+}
+.itens-footer img{
+    width: 10%;
+}
+aside{
+    border-right: 2px black double;
+    flex-basis:12%;
+    min-width: 200px;
+    margin-top: 15px;
+    margin-right: 1%;
+    margin-left: 0.25%;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+aside h2{
+    text-align: center;
+}
+aside ul{
+    padding: 10px;
+    list-style: none;
+}
+
+aside li{
+    margin: 10px;
+}
+
+aside ul li a{
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+aside img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+form{
+    padding: 10px;
+}
+
+form label{
+    margin-right: 10px;
+}
+
+form div{
+    padding: 5px;
+    margin: 5px auto;
+}
+h2{
+    margin: 0;
+}
+form input, select{
+    border-radius: 30px;
+    padding: 5px;
+}
+form input[type=submit]{
+    background-color: springgreen;
+    color: white;
+    padding: 15px;
+    font-size: medium;
+    font-weight: 800;
+}
+
+form input[type=submit]:hover{
+    background-color: chartreuse;
+}
+.h2Table{
+    margin-top: 3%;
+}
+    </style>
+</head>
+<body>
+
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <header id="topo" class="flex horizontal">
+        <img src="https://www.pikpng.com/pngl/b/31-319697_pokemon-logo-png-transparent-pokemon-logo-png-images.png" alt="Logo de Pokemon" id="logo">
+        <nav>
+            <ul class="flex horizontal menu">
+                <li> <a href="">Início</a> </li>
+                <li> <a href="">Anime</a> </li>
+                <li> <a href="">Mangá</a> </li>
+                <li> <a href="">Comprar</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex horizontal">
+        <aside>
+            <h2>Links relacionados</h2>
+            <ul>
+                <li class="flex horizontal"> <a class="flex horizontal" target="_blank" href="https://www.pokemon.com/br/"> <img src="templates/imagens/pokebola.png" alt=""> Site Oficial do Pokemon</a>  </li>
+                <li class="flex horizontal"> <a class="flex horizontal" target="_blank" href="https://www.pokemon.com/br/pokemon-estampas-ilustradas/jogar-online/"> <img src="templates/imagens/pokemon-tcg-icon.jpeg" alt="">Pokemon TCG</a>  </li>
+                <li class="flex horizontal"> <a class="flex horizontal" target="_blank" href="https://pokemongolive.com/pt_br/"> <img src="templates/imagens/download.png" alt="">Pokemon GO</a>  </li>
+            </ul>
+        </aside>
+        <main>
+            <h2 class="h2Table">Tabela de Pokemon</h2>
+            <table class="pokedex">
+                <tr> 
+                    <th>Imagem</th> 
+                    <th>Nº</th> 
+                    <th>Nome</th> 
+                    <th>Tipo</th> 
+                </tr> 
+                <tr> 
+                    <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt=""></td>
+                    <td>001</td> 
+                    <td>Bulbasaur</td> 
+                    <td>Grass/Poison</td> 
+                </tr>
+                <tr> 
+                    <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt=""></td>
+                    <td>004</td> 
+                    <td>Charmander</td> 
+                    <td>Fire</td> 
+                </tr>
+                <tr> 
+                    <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt=""></td>
+                    <td>007</td> 
+                    <td>Squirtle</td> 
+                    <td>Water</td> 
+                </tr>
+            </table>
+            <hr>
+            <h2>Adicionar novo Pokemon na tabela</h2>
+            <form action="/action_page.php" method="post">
+                <div>
+                    <label for="pkmImage">Imagem do Pokemon:</label>
+                    <input type="file" id="pkmImage" name="pkmImage">
+                </div>
+                <div>
+                    <label for="pkmNum">Número na Pokedex:</label>
+                    <input type="number" id="pkmNum" name="pkmNum" value="">
+                </div>
+                <div>
+                    <label for="pkmName">Nome:</label>
+                    <input type="text" id="pkmName" name="pkmName" value="">
+                </div>
+                <div>
+                    <label for="pkmType">Tipo:</label>
+                    <select name="pkmType" id="pkmType">
+                        <option value="normal" selected>Normal</option>
+                        <option value="fire">Fire</option>
+                        <option value="Water">Water</option>
+                        
+                    </select>
+                </div>
+                <input class="btn btn-primary" type="submit" value="ENVIAR">
+              </form>
+
+        </main>
+    </div>
+    <footer class="flex horizontal">
+        <div class="itens-footer">
+            <p>Desenvolvido por: Diogo Alves</p>
+            <a href="#topo"> <img src="https://lh6.googleusercontent.com/-Jz7_GSI01bQ/AAAAAAAAAAI/AAAAAAAAAAc/azspNNMhbY0/photo.jpg" alt=""> </a>
+            <p>Ctrl+Play Campos dos Goytacazes</p>
+
+        </div>
+    </footer>
+</body>
+</html>
